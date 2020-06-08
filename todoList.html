@@ -7,11 +7,12 @@
 
   <body>
     <h1>Todo List</h1>
-
+    
     <button id = "displayTodosButton">Display Todos</button>
     <button id = "toggleAllButton">toggleAll</button>
     
     <script>
+      // dev ready
       var todoList = {
         todos: [],
         displayTodos: function() {
@@ -43,7 +44,6 @@
           this.displayTodos();
         },
         deleteTodo: function(pos) {
-          debugger;
           this.todos.splice(pos, 1);
           this.displayTodos();
         },
